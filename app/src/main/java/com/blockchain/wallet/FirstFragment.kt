@@ -46,12 +46,14 @@ class FirstFragment : Fragment() {
 
 		//Y axis
 		val yValsCandleStick = ArrayList<CandleEntry>()
-		/*yValsCandleStick.add(CandleEntry(0f, 225.0f, 219.84f, 224.94f, 221.07f))
-		yValsCandleStick.add(CandleEntry(1f, 228.35f, 222.57f, 223.52f, 226.41f))
-		yValsCandleStick.add(CandleEntry(2f, 226.84f, 222.52f, 225.75f, 223.84f))
-		yValsCandleStick.add(CandleEntry(3f, 222.95f, 217.27f, 222.15f, 217.88f))
-		yValsCandleStick.add(CandleEntry(4f, 222.95f, 217.27f, 222.15f, 217.88f))
-		yValsCandleStick.add(CandleEntry(5f, 222.95f, 217.27f, 222.15f, 217.88f))*/
+		yValsCandleStick.add(CandleEntry(0f, 49151.66f, 48899.99f, 49000f, 49058.67f))
+		yValsCandleStick.add(CandleEntry(1f, 49146.02f, 48840.84f, 48949.8f, 49000f))
+		yValsCandleStick.add(CandleEntry(2f, 49222.54f, 48905.83f, 49157.65f, 48947.89f))
+		yValsCandleStick.add(CandleEntry(3f, 49474.09f, 49109.58f, 49335.38f, 49149.15f))
+		yValsCandleStick.add(CandleEntry(4f, 49500f, 49277.56f, 49314.68f, 49340.75f))
+		yValsCandleStick.add(CandleEntry(5f, 49896.7f, 49252.85f, 49844.7f, 49314.67f))
+		yValsCandleStick.add(CandleEntry(6f, 49894.47f, 49760.66f, 49765.13f, 49844.7f))
+		yValsCandleStick.add(CandleEntry(7f, 49893.15f, 49604.31f, 49893.15f, 49737.15f))
 		val size = xvalue.size
 
 		for (i in 0 until size) {
@@ -63,7 +65,7 @@ class FirstFragment : Fragment() {
 			val close = (Math.random() * 6).toFloat() + 1f
 
 			val odd = i%2 != 0
-			yValsCandleStick.add(CandleEntry(i.toFloat(), value+high, value-low, if (!odd) value + open else value - open, if (odd) value - close else value + close))
+			//yValsCandleStick.add(CandleEntry(i.toFloat(), value+high, value-low, if (!odd) value + open else value - open, if (odd) value - close else value + close))
 		}
 
 		val candleDataSet = CandleDataSet(yValsCandleStick, "first")
